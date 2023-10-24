@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(240, 242, 245);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(2%);
+}
+
+aside {
+  width: 500px;
+  margin-right: 80px;
+  margin-left: 0px;
+  margin-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1px;
+}
+
+aside img {
+  height: 106px;
+}
+
+aside h2 {
+  margin-left: 26px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #1b1b1b;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  background: white;
+  height: 349px;
+  width: 396px;
+  padding: 20px 20px 24px 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  gap: calc(5%);
+}
+
+main div input {
+  height: 22px;
+  padding: 16px 14px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+}
+
+main div input::placeholder {
+  color: #919191;
+  opacity: 1; /* Firefox */
+}
+
+main div input::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #919191;
+}
+
+main div input:focus {
+  border: 1px solid #1877f2;
+}
+
+main div button {
+  height: 48px;
+  border: 1px;
+  border-radius: 5px;
+  color: #dadde1;
+  font-weight: bold;
+}
+
+main div a {
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 14px;
+}
+
+main div hr {
+  color: aqua;
+}
+
+main div a:hover {
+  text-decoration: underline;
+}
+
+.hr {
+  display: flex;
+  width: 95%;
+  height: 0px;
+  border-top: 1px solid;
+  padding: 0;
+  color: #dadde1;
+  align-self: center;
+}
+
+.login {
+  background-color: #1877f2;
+  padding: 0 16px;
+  font-size: 20px;
+  color: white;
+}
+
+.createAccount {
+  background-color: #42b72a;
+  width: 192.41px;
+  align-self: center;
+  font-size: 17px;
+  color: white;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.createAccount:hover {
+  cursor: pointer;
+}
+
+main p {
+  margin-left: 50px;
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    width: 400px;
+    margin: 15px;
+    align-items: center;
+  }
+
+  aside h2 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  main div {
+    margin-right: 0px;
+  }
+}
